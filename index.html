@@ -1,11 +1,38 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Some awesome content
-  </body>
+    <div class="hero  is-fullheight">
+      <div class="hero-body has-text-centered">
+        <div class="container">
+          <h1 class="title">
+            Yoda speak generator
+          </h1>
+          <h2 class="subtitle">
+            Speak like me, you will
+          </h2>
+          <div class="columns">
+            <div class="column">
+              <p class="control">
+                <textarea id="original" class="textarea" placeholder="Regular speak...">
+                </textarea>
+              </p>
+            </div>
+            <div class="column">
+              <p class="control">
+                <textarea id="result" class="textarea" placeholder="Becomes..." disabled>
+                </textarea>
+              </p>
+            </div>
+          </div>
+          <a id="submit-button" class="button is-success">Submit</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
-
