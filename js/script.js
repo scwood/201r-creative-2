@@ -13,6 +13,9 @@ $(document).ready(function () {
       },
       success: function (response) {
         result.val(response);
+      },
+      error: function () {
+        result.val('There was an error, try again');
       }
     });
   }
